@@ -15,6 +15,8 @@
 		F7C52AEC1E126C0C00BC81EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C52AEA1E126C0C00BC81EC /* LaunchScreen.storyboard */; };
 		F7C52AF71E126C0D00BC81EC /* DYSKeyboardHelperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C52AF61E126C0D00BC81EC /* DYSKeyboardHelperDemoTests.m */; };
 		F7C52B021E126C0D00BC81EC /* DYSKeyboardHelperDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C52B011E126C0D00BC81EC /* DYSKeyboardHelperDemoUITests.m */; };
+		F7C52B221E1277EA00BC81EC /* DYSKeyboardAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C52B1F1E1277EA00BC81EC /* DYSKeyboardAccessoryView.m */; };
+		F7C52B231E1277EA00BC81EC /* DYSKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C52B211E1277EA00BC81EC /* DYSKeyboardHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		F7C52AFD1E126C0D00BC81EC /* DYSKeyboardHelperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYSKeyboardHelperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C52B011E126C0D00BC81EC /* DYSKeyboardHelperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSKeyboardHelperDemoUITests.m; sourceTree = "<group>"; };
 		F7C52B031E126C0D00BC81EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C52B1E1E1277EA00BC81EC /* DYSKeyboardAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYSKeyboardAccessoryView.h; sourceTree = "<group>"; };
+		F7C52B1F1E1277EA00BC81EC /* DYSKeyboardAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYSKeyboardAccessoryView.m; sourceTree = "<group>"; };
+		F7C52B201E1277EA00BC81EC /* DYSKeyboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYSKeyboardHelper.h; sourceTree = "<group>"; };
+		F7C52B211E1277EA00BC81EC /* DYSKeyboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYSKeyboardHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		F7C52AD01E126C0C00BC81EC = {
 			isa = PBXGroup;
 			children = (
+				F7C52B1D1E1277EA00BC81EC /* DYSKeyboardHelper */,
 				F7C52ADB1E126C0C00BC81EC /* DYSKeyboardHelperDemo */,
 				F7C52AF51E126C0D00BC81EC /* DYSKeyboardHelperDemoTests */,
 				F7C52B001E126C0D00BC81EC /* DYSKeyboardHelperDemoUITests */,
@@ -138,6 +145,18 @@
 				F7C52B031E126C0D00BC81EC /* Info.plist */,
 			);
 			path = DYSKeyboardHelperDemoUITests;
+			sourceTree = "<group>";
+		};
+		F7C52B1D1E1277EA00BC81EC /* DYSKeyboardHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F7C52B1E1E1277EA00BC81EC /* DYSKeyboardAccessoryView.h */,
+				F7C52B1F1E1277EA00BC81EC /* DYSKeyboardAccessoryView.m */,
+				F7C52B201E1277EA00BC81EC /* DYSKeyboardHelper.h */,
+				F7C52B211E1277EA00BC81EC /* DYSKeyboardHelper.m */,
+			);
+			name = DYSKeyboardHelper;
+			path = ../DYSKeyboardHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C52AE41E126C0C00BC81EC /* ViewController.m in Sources */,
+				F7C52B221E1277EA00BC81EC /* DYSKeyboardAccessoryView.m in Sources */,
 				F7C52AE11E126C0C00BC81EC /* AppDelegate.m in Sources */,
+				F7C52B231E1277EA00BC81EC /* DYSKeyboardHelper.m in Sources */,
 				F7C52ADE1E126C0C00BC81EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +531,7 @@
 				F7C52B081E126C0D00BC81EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7C52B091E126C0D00BC81EC /* Build configuration list for PBXNativeTarget "DYSKeyboardHelperDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +540,7 @@
 				F7C52B0B1E126C0D00BC81EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7C52B0C1E126C0D00BC81EC /* Build configuration list for PBXNativeTarget "DYSKeyboardHelperDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +549,7 @@
 				F7C52B0E1E126C0D00BC81EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,7 +31,7 @@ static CGFloat viewFrameY = 0;
 - (void)dealloc {
     
 
-    // gyc for ios7 让所有的 输入视图 失去焦点,否则会闪退
+    //ios7 让所有的输入视图失去焦点,否则会闪退
     NSArray * arrs = [self allSubviews:view_targetObject];
     for (id view in arrs) {
         if ([view isKindOfClass:[UITextView class]] || [view isKindOfClass:[UITextField class]]) {
@@ -146,7 +146,6 @@ static CGFloat viewFrameY = 0;
             results = [results arrayByAddingObjectsFromArray:riz];
         }
         
-        // 就是想找到 textfield  gyc add
         if ([eachView isKindOfClass:[UITableView class]]) {
             
             NSArray * cells = [(UITableView *)eachView visibleCells];
@@ -159,7 +158,6 @@ static CGFloat viewFrameY = 0;
                 }
             }
         }
-        // end
     }
     return results;
 }
@@ -203,8 +201,6 @@ static CGFloat viewFrameY = 0;
     else rect.origin.y = viewFrameY;
     
     view_targetObject.frame = rect;
-    
-//    NSLog(@"view_targetObject.tag:%ld",(long)view_targetObject.tag);
     
     [UIView commitAnimations];
 }

@@ -25,13 +25,13 @@
         toolbar_Keyboard.barStyle = UIBarStyleBlackTranslucent;
         
         UIBarButtonItem *previousBarItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"前一项", @"")
-                                                                            style:UIBarButtonItemStyleBordered
+                                                                            style:UIBarButtonItemStylePlain
                                                                            target:self
                                                                            action:@selector(toolbarButtonTap:)];
         previousBarItem.tag=1;
         
         UIBarButtonItem *nextBarItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"后一项", @"")
-                                                                        style:UIBarButtonItemStyleBordered
+                                                                        style:UIBarButtonItemStylePlain
                                                                        target:self
                                                                        action:@selector(toolbarButtonTap:)];
         nextBarItem.tag=2;
